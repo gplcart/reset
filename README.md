@@ -7,4 +7,4 @@ Reset is a [GPL Cart](https://github.com/gplcart/gplcart) module that allows sup
 **Installation**
 
 1. Download and extract to `system/modules` manually or using composer `composer require gplcart/reset`. IMPORTANT: If you downloaded the module manually, be sure that the name of extracted module folder doesn't contain a branch/version suffix, e.g `-master`. Rename if needed.
-2. Go to `admin/tool/reset` end reset your installation
+2. Go to `admin/tool/reset` and reset your installation
