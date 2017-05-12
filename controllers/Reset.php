@@ -30,23 +30,13 @@ class Reset extends BackendController
      */
     public function editReset()
     {
-        $this->controlAccessEditReset();
+        $this->controlAccessSuperAdmin();
 
         $this->setTitleEditReset();
         $this->setBreadcrumbEditReset();
 
         $this->submitReset();
         $this->outputEditReset();
-    }
-
-    /**
-     * Constrols access to the reset page
-     */
-    protected function controlAccessEditReset()
-    {
-        if (!$this->isSuperadmin()) {
-            $this->outputHttpStatus(403);
-        }
     }
 
     /**
@@ -99,7 +89,7 @@ class Reset extends BackendController
      */
     protected function doReset()
     {
-        $this->controlAccessEditReset();
+        $this->controlAccessSuperAdmin();
         $this->doDbTablesReset();
         $this->doConfigReset();
 
