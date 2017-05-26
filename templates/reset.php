@@ -16,7 +16,7 @@
       <div class="form-group required<?php echo $this->error('confirm', ' has-error'); ?>">
         <label class="col-md-2 control-label"><?php echo $this->text('Confirm'); ?></label>
         <div class="col-md-4">
-          <input name="reset[confirm]" class="form-control" value="<?php echo isset($reset['confirm']) ? $this->escape($reset['confirm']) : ''; ?>">
+          <input name="reset[confirm]" class="form-control" value="<?php echo isset($reset['confirm']) ? $this->e($reset['confirm']) : ''; ?>">
           <div class="help-block">
             <?php echo $this->error('confirm'); ?>
             <div class="text-muted"><?php echo $this->text('Type in the name of <a href="@url">the site</a> to confirm', array('@url' => $this->url('admin/settings/store/1/edit'))); ?></div>
