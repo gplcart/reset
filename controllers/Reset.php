@@ -78,7 +78,7 @@ class Reset extends BackendController
     {
         $this->setSubmitted('reset');
 
-        if ($this->getSubmitted('confirm') !== $this->store('name')) {
+        if ($this->getSubmitted('confirm') !== $this->getStore('name')) {
             $this->setError('confirm', $this->text('Wrong confirmation word'));
         }
         return !$this->hasErrors();
