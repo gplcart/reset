@@ -19,7 +19,7 @@
           <input name="reset[confirm]" class="form-control" value="<?php echo isset($reset['confirm']) ? $this->e($reset['confirm']) : ''; ?>">
           <div class="help-block">
             <?php echo $this->error('confirm'); ?>
-            <div class="text-muted"><?php echo $this->text('Type in the name of <a href="@url">the site</a> to confirm', array('@url' => $this->url('admin/settings/store/1/edit'))); ?></div>
+            <div class="text-muted"><?php echo $this->text('Type in the name of <a href="@url">the site</a> to confirm', array('@url' => $this->url('admin/settings/store/edit/1'))); ?></div>
           </div>
         </div>
       </div>
