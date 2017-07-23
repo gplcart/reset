@@ -52,12 +52,7 @@ class Reset extends BackendController
      */
     protected function setBreadcrumbEditReset()
     {
-        $breadcrumb = array(
-            'text' => $this->text('Dashboard'),
-            'url' => $this->url('admin')
-        );
-
-        $this->setBreadcrumb($breadcrumb);
+        $this->setBreadcrumbBackend();
     }
 
     /**
@@ -81,7 +76,7 @@ class Reset extends BackendController
         if ($this->getSubmitted('confirm') !== $this->getStore('name')) {
             $this->setError('confirm', $this->text('Wrong confirmation word'));
         }
-        return !$this->hasErrors();
+        return !$this->hasErrors(false);
     }
 
     /**
