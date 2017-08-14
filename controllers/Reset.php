@@ -52,7 +52,7 @@ class Reset extends BackendController
      */
     protected function setBreadcrumbEditReset()
     {
-        $this->setBreadcrumbBackend();
+        $this->setBreadcrumbHome();
     }
 
     /**
