@@ -96,8 +96,8 @@ class Reset extends BackendController
      */
     protected function doConfigReset()
     {
-        chmod(GC_CONFIG_COMMON, 0777);
-        unlink(GC_CONFIG_COMMON);
+        chmod(GC_FILE_CONFIG_COMPILED, 0777);
+        unlink(GC_FILE_CONFIG_COMPILED);
     }
 
     /**
