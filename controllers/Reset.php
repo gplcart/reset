@@ -52,7 +52,12 @@ class Reset extends BackendController
      */
     protected function setBreadcrumbEditReset()
     {
-        $this->setBreadcrumbHome();
+        $breadcrumb = array(
+            'url' => $this->url('admin'),
+            'text' => $this->text('Dashboard')
+        );
+
+        $this->setBreadcrumb($breadcrumb);
     }
 
     /**
