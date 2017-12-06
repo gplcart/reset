@@ -9,22 +9,11 @@
 
 namespace gplcart\modules\reset;
 
-use gplcart\core\Module,
-    gplcart\core\Config;
-
 /**
  * Main class for Reset module
  */
-class Reset extends Module
+class Reset
 {
-
-    /**
-     * @param Config $config
-     */
-    public function __construct(Config $config)
-    {
-        parent::__construct($config);
-    }
 
     /**
      * Implements hook "route.list"
