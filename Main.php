@@ -12,7 +12,7 @@ namespace gplcart\modules\reset;
 /**
  * Main class for Reset module
  */
-class Module
+class Main
 {
 
     /**
