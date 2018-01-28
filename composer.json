@@ -1,12 +1,18 @@
 {
-    "name": "gplcart/reset",
-    "type": "gplcart-module",
-    "description": "Allows to delete all database tables and config files for the current site and redirect back to installation",
-    "keywords": ["gplcart", "ecommerce", "shopping cart", "gplcart module", "php"],
-    "license": "GPL-3.0+",
-    "require": {
-        "gplcart/composer-module-installer": "*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+  "name": "gplcart/reset",
+  "type": "gplcart-module",
+  "description": "Allows to delete all database tables and config files for the current site and redirect back to installation",
+  "keywords": [
+    "gplcart",
+    "ecommerce",
+    "shopping cart",
+    "gplcart module",
+    "php"
+  ],
+  "license": "GPL-3.0-or-later",
+  "require": {
+    "gplcart/composer-module-installer": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
