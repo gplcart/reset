@@ -22,7 +22,7 @@ class Main
     public function hookRouteList(array &$routes)
     {
         $routes['admin/tool/reset'] = array(
-            'access' => '__superadmin',
+            'access' => '_superadmin',
             'menu' => array('admin' => 'Reset'),
             'handlers' => array(
                 'controller' => array('gplcart\\modules\\reset\\controllers\\Reset', 'editReset')
