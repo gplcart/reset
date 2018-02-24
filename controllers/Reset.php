@@ -9,21 +9,13 @@
 
 namespace gplcart\modules\reset\controllers;
 
-use gplcart\core\controllers\backend\Controller as BackendController;
+use gplcart\core\controllers\backend\Controller;
 
 /**
  * Handles incoming requests and outputs data related to Reset module
  */
-class Reset extends BackendController
+class Reset extends Controller
 {
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        parent::__construct();
-    }
 
     /**
      * Route page callback
@@ -31,10 +23,8 @@ class Reset extends BackendController
     public function editReset()
     {
         $this->controlAccessSuperAdmin();
-
         $this->setTitleEditReset();
         $this->setBreadcrumbEditReset();
-
         $this->submitReset();
         $this->outputEditReset();
     }
@@ -81,6 +71,7 @@ class Reset extends BackendController
         if ($this->getSubmitted('confirm') !== $this->getStore('name')) {
             $this->setError('confirm', $this->text('Wrong confirmation word'));
         }
+
         return !$this->hasErrors(false);
     }
 
@@ -101,8 +92,7 @@ class Reset extends BackendController
      */
     protected function doConfigReset()
     {
-        chmod(GC_FILE_CONFIG_COMPILED, 0777);
-        unlink(GC_FILE_CONFIG_COMPILED);
+        return gplcart_config_delete(GC_FILE_CONFIG_COMPILED);
     }
 
     /**

@@ -1,8 +1,8 @@
 {
-    "name": "Reset",
-    "version": "1.0.0-dev",
-    "description": "Allows to delete all database tables and config files for the current site and redirect back to installation",
-    "author": "Iurii Makukh <gplcart.software@gmail.com>",
-    "core": "1.x",
-    "license": "GPL-3.0+"
+  "name": "Reset",
+  "version": "1.0.0-dev",
+  "description": "Allows to delete all database tables and config files and redirect back to installation",
+  "author": "Iurii Makukh <gplcart.software@gmail.com>",
+  "core": "1.x",
+  "license": "GPL-3.0+"
 }
